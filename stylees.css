@@ -1,0 +1,337 @@
+<style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    @font-face {
+        font-family: 'Charis SIL';
+    }
+
+    body{
+        background-color: white;
+        width: 100%;
+        height: 300%;
+        margin: 0;
+    }
+
+    /* Header */
+
+    header{
+        display: flex;
+        background-color: #7acb6e;
+        width: 100%;
+    }
+
+    .head1{
+        display: flex;
+        justify-content: space-around;
+        height: 100%;
+        width:100%
+    }
+
+    .social-icons {
+        width: 5%;
+        display: flex;
+        margin-left: 2%;
+        align-items: center;
+    }
+
+    .social-icon {
+        width: 30px;  /* Размер иконки */
+        height: 30px;
+        margin: 5px;
+        transition: transform 0.3s ease; /* Эффект при наведении */
+    }
+
+    .social-icon:hover {
+        transform: scale(1.2); /* Увеличение иконки при наведении */
+    }
+
+    .juice_and_name{
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .juice1{
+        height: 100%;
+        width: 9%;
+        display: flex;
+        align-items: center;
+    }
+
+    .juice {
+        width: 100%;
+        transform: rotate(17deg);
+        z-index: 2;
+        
+    }
+
+    .name1{
+        display: flex;
+        align-items: center;
+    }
+
+    h1 {
+        font-family: 'Charis SIL';
+        font-weight: bold;  
+        z-index: 3;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+    }
+    .all {
+        display: flex;
+        flex-direction: column; /* Элементы располагаются вертикально */
+        align-items: center;    /* Центрируем элементы по горизонтали */
+        justify-content: flex-start; /* Можно использовать space-between или другие варианты */
+        width: 100%;
+    }
+/* 1 Section */
+
+    .intro {
+        display: flex;
+        align-items: flex-start; /* Выровнять элементы по верхнему краю */
+        gap: 40px; /* Расстояние между фотографией и текстом */
+        margin-top: 20px;
+        max-width: 1200px;
+        margin-left: 2%; /* Центрировать блок по горизонтали */
+        margin-right: auto;
+    }
+
+    .sonya1 img {
+        border-radius: 10px; /* Добавить закругленные углы, если нужно */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень для фотографии */
+        margin-right: 40%;
+        }
+
+    .intro-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .intro1 {
+        display: flex;
+        align-items: center;
+    }
+
+    .introheading {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .introname h1 {
+        font-size: 3em;
+        color: #e24c37;
+    }
+
+    .chebur img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .introtextbox {
+        text-align: left; /* Выравнивание текста по левому краю */
+    }
+
+    .introtext h2 {
+        font-size: 1.5em;
+        color: #e24c37;
+        line-height: 1.6;
+    }
+
+
+
+    h2 {
+        font-family: 'Charis SIL';
+        font-weight: bold; 
+    
+    }
+    p {
+        font-family: 'Charis SIL'; 
+        font-size: 2em;
+        text-align: left;
+        color: white;
+    }
+    a {
+        font-family: 'Charis SIL'; 
+        font-size: 1em;
+        text-align: left;
+        color: white;
+    }
+    .container {
+        position: relative;
+        height: 400px;
+        width: 100%;
+        background-color: black;
+    }
+    li {
+        color: #352C2C;
+        font-family: 'Charis SIL';
+
+    }
+    ul {
+        color: #352C2C;
+        font-family: 'Charis SIL';
+        font-weight: bold;
+    }
+
+
+    .menu-trigger {
+        display: none;
+    }
+
+    .menu-item {
+        position: relative;
+        display: inline-block;
+        margin-right: 20px; 
+    }
+
+    .submenu {
+        display: none;
+        position: absolute;
+        top: 70%;
+        font-size: 3em;
+        background-color: #f9f9f9;
+        width: 200px;
+        height: 300px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .submenu .menu-item { /* Если элементы в подменю - это <li> или элементы с классом menu-item */
+        margin-bottom: 15px; /* Увеличиваем расстояние между объектами */
+    }
+
+    .submenu a { /* Если в подменю есть ссылки */
+        font-size: 35px; /* Увеличиваем размер шрифта для ссылок */
+        padding: 10px; /* Увеличиваем внутренний отступ для ссылки */
+    }
+
+    .menu-item {
+        position: relative;
+    }
+
+    .submenu {
+        display: none;
+        position: absolute;
+        background-color: #71cdea;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .menu-item:hover .submenu {
+        display: block;
+    }
+
+    .section1 {
+        display: block;
+    }
+
+    .pt2 {
+        margin-top: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 16%;
+    }
+
+
+    .pt2left{
+        /* margin-left: 5.8%; */
+        height: 100%;
+        width: 67%;
+        display: flex;
+        align-items: center;
+
+    }
+    
+    .bunny img {
+        z-index: 2;
+        border-radius: 15px; 
+    }
+  
+    .pt2article{
+        display: flex;
+        flex-direction: column;
+        margin-left: 9%;
+        width: 60%;
+    }
+
+    .textpt2 {
+        z-index: 3;
+        
+    }
+
+    .pt2article h1{
+        width: 100%;
+        margin-right: 10px;
+        z-index: 2;
+        color: #e24c37;
+        font-size: 3em;
+    }
+
+    .sonyaHat{
+     
+    }
+
+    .sonya2 img {
+        position: relative;
+        top: -17%;
+        border-radius: 15px; 
+    }
+
+    .hat {
+     
+    }
+     .pt3 {
+        width: 100%;
+        height: 16%;
+        margin-top: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+
+    .pt3left{
+        /* margin-left: 5.8%; */
+        height: 100%;
+        width: 67%;
+        display: flex;
+        align-items: center;
+
+    }
+    
+    .school img {
+        z-index: 2;
+        border-radius: 15px; 
+    }
+  
+    .pt3article{
+        display: flex;
+        flex-direction: column;
+        margin-left: 9%;
+        width: 60%;
+    }
+
+    .textpt3 {
+        z-index: 3;
+        
+    }
+
+    .pt3article h1{
+        width: 100%;
+        margin-right: 10px;
+        z-index: 2;
+        color: #e24c37;
+        font-size: 3em;
+    }
+
+  
+
+
+</style> 
